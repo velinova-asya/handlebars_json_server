@@ -1,0 +1,345 @@
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.clearfix {clear: both; content: '';}
+img {max-width: 100%; border: 0;}
+body {position: relative; height: 100%;}
+
+#body_container {
+	position: relative;
+	max-width: 1280px;
+	min-width: 320px;
+	width: 90%;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	color: #404040;
+	border: 1px solid #f0eeef;
+	min-height: 100%;
+}
+
+/* =================================================
+====================================================
+
+					HEADER
+
+====================================================
+================================================= */
+
+header {
+	position: relative;
+	background-color: #4b4b4b;
+	width: 100%;
+}
+
+header ul {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	display: table;
+}
+
+header ul li {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+header ul li a.header_a {
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 13px;
+	padding: 20px 40px;
+	margin: 0;
+	border-right: 1px solid #343434;
+	background-color: #565656;
+}
+
+header ul li a.header_a.active_nav {background-color: #404040;}
+
+#main_container {
+	position: relative;
+	display: flex;
+}
+
+
+/* =================================================
+====================================================
+
+					LISTS
+
+====================================================
+================================================= */
+
+h2 {
+	padding: 12px 0 12px 20px;
+	margin: 0;
+	font-weight: normal;
+}
+
+#lists_div {
+	position: relative;
+	flex: none;
+}
+
+#lists_div #list_items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#lists_div #list_items li {
+	border-top: 1px solid #f0eeef;
+	position: relative;
+}
+
+#lists_div #list_items li:last-child {border-bottom: 1px solid #f0eeef;}
+
+#lists_div #list_items li a.list_link {
+	color: #404040;
+	font-size: 13px;
+	text-decoration: none;
+	margin: 0;
+	padding: 15px 0;
+	display: inline-block;	
+	width: 200px;
+	text-align: left;
+}
+
+.icon_span {padding: 0 10px 0 20px;}
+
+span.number {
+	border-radius: 6px;
+	display: inline-block;
+	width: 20px;
+	padding: 4px 0;
+	text-align: center;
+	font-size: 10px;
+	position: absolute;
+	right: 16px;
+}
+
+span.number.dark {
+	background-color: #7a7a7a;
+	color: #ffffff;
+}
+
+span.number.light {
+	background-color: #f0eeef;
+	color: #7a7a7a;
+}
+
+
+
+/* =================================================
+====================================================
+
+					TASKS BOARD
+
+====================================================
+================================================= */
+
+#tasks_div {
+	background-color: #fafafa;
+	position: relative;
+	width: calc(100% - 202px);
+}
+
+#task_board_h2 {padding: 16px 0 16px 20px;}
+
+#columns_container {
+	position: relative;
+	width: 100%;
+	border-top: 1px solid #d0d0d0;
+	padding: 0;
+}
+
+#column_1 {margin: 20px 1% 0 2%;}
+
+#column_2 {margin: 20px 0 0 0;}
+
+#column_3 {margin: 20px 2% 0 1%;}
+
+.columns {
+	width: 31%;
+	box-shadow: 2px 2px 5px #7a7a7a;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* ==================
+		h3
+================== */
+
+h3 {
+	text-transform: uppercase;
+	padding: 10px 0;
+	margin: 0;
+	color: #ffffff;
+	font-weight: normal;
+	display: inline-block;
+}
+
+.icon_h3 {padding: 0 10px;}
+
+#waiting_h3 {background-color: #65a6ff;}
+
+#progress_h3 {background-color: #86bc40;}
+
+#review_h3 {background-color: #fb7653;}
+
+.h3_div {position: relative;}
+
+.tasks_counter {
+	border-radius: 6px;
+	display: inline-block;
+	padding: 4px 6px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 12px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -12px;
+	background-color: #ffffff;
+}
+
+#waiting_counter {color: #65a6ff;}
+
+#progress_counter {color: #86bc40;}
+
+#review_counter {color: #fb7653;}
+
+/* ==================
+	columns-ul
+================== */
+
+.columns-ul {
+	background-color: #ffffff;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.columns-ul li {
+	border-bottom: 1px solid #7a7a7a;
+	position: relative;
+	height: 40px;
+	padding: 5px 0 0 10px;
+	overflow: hidden;
+	display: block;
+}
+
+.columns-ul li a.task_link {
+	width: 80%;
+	position: relative;
+	display: block;
+	line-height: 2;
+	overflow: hidden;
+	text-decoration: none;
+	color: #404040;
+}
+
+.pic_span {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -16px;
+	width: 32px;
+	height: 32px;
+}
+
+.pic_span img {width: 100%;}
+
+
+
+/* =================================================
+====================================================
+
+					ADD TASKS
+
+====================================================
+================================================= */
+
+.addBtn {
+	color: #418f05;
+	width: 100%;
+	background-color: #fafafa;
+	height: 38px;
+	text-align: left;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	font-size: 10px;
+}
+
+.add_div {
+	background-color: #ffffff;
+	display: none;
+	position: relative;
+}
+
+.addBtnSmall {
+	position: relative;
+	background-color: #418f05;
+	color: #ffffff;
+	outline: none;
+	border: none;
+	font-size: 10px;
+	font-weight: bold;
+	width: 28%;
+	height: 29px;
+	vertical-align: middle;
+}
+
+.add_input {
+	position: relative;
+	width: 65%;
+	height: 30px;
+	margin: 5px;
+}
+
+.radio_form {
+	margin-left: 5px;
+	font-size: 13px;
+}
+
+.form_p {
+	color: #418f05;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* =================================================
+====================================================
+
+					MEDIA QUERIES
+
+====================================================
+================================================= */
+
+@media (max-width: 1206px) {
+	.columns {width: 47%;}
+	#column_1 {margin: 20px 1% 0 2%;}
+	#column_2 {margin: 20px 2% 0 0;}
+	#column_3 {margin: 20px 0 0 2%;}
+}
+
+@media (max-width: 768px) {
+	.columns {width: 98%;}
+	#column_1 {margin: 20px 1%;}
+	#column_2 {margin: 20px 1%;}
+	#column_3 {margin: 20px 1%;}
+	header ul li a.header_a {padding: 20px 30px;}
+}
+
+@media (max-width: 480px) {
+	#main_container {display: block;}
+	#tasks_div {width: 100%;}
+	header ul li a.header_a {padding: 20px 18px;}
+}
